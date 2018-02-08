@@ -1,0 +1,24 @@
+create 5 new blogs.
+create several posts for each blog.
+create several messages for the first post.
+
+know how to retrieve all posts for the first blog.
+#Blog.first.posts
+
+know how to retrieve all posts for the last blog (sorted by title in the DESC order).
+#Blog.last.posts.order(title: :desc)
+
+know how to update the first post's title.
+#one = Post.first
+#one.title = "Programming all day"
+#one.save
+
+know how to delete the third post (have the model automatically delete all messages associated with the third post when you delete the third post).
+#marked = Post.third
+#marked.delete
+
+know how to retrieve all blogs.
+#Blog.all
+
+know how to retrieve all blogs whose id is less than 5.
+#Blog.where("id < ?", 5)
